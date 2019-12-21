@@ -8,6 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class BannerComponent implements OnInit {
 
   constructor() { }
+  public banner:any = [
+    {
+      'url':'../../assets/images/1.jpg',
+      'href':'http://www.baidu.com'
+    },
+    {
+      'url':'../../assets/images/2.jpg',
+      'href':'http://www.baidu.com'
+    },
+    {
+      'url':'../../assets/images/3.jpg',
+      'href':'http://www.baidu.com'
+    },
+  ];
 
   ngOnInit() {
   }

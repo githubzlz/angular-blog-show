@@ -1,0 +1,46 @@
+<div class="list">
+  <div class="data" *ngFor="let blog of pageInfo.list">
+    <div class="image">
+      <img class="img"  src="../../assets/images/3.jpg" alt="">
+    </div>
+    <div class="right">
+      <a href="">
+        <div class="title">&nbsp;&nbsp;&nbsp;
+          {{blog.title}}
+        </div>
+      </a>
+      <div class="line"></div>
+      <div class="description">&nbsp;&nbsp;
+        {{blog.summary}}
+      </div>
+      <a href="">
+        <div class="textbody">&nbsp;&nbsp;&nbsp;&nbsp;
+          {{blog.content}}
+        </div>
+      </a>
+    </div>
+    <div class="line"></div>
+    <div class="bottom" >
+      <div class="bottom-left">
+        <i nz-icon nzType="user" nzTheme="outline" style="margin-right: 3px;"></i><nz-tag [nzColor]="'#108ee9'">{{blog.author}}</nz-tag>
+        <i nz-icon nzType="tags" nzTheme="outline" style="margin-right: 3px;"></i>
+        <nz-tag [nzColor]="'magenta'" *ngFor="let tag of blog.tags" >{{tag.name}}</nz-tag>
+        
+      </div>
+      <div class="bottom-right">
+        <i nz-icon nzType="star-o" style="margin-right: 3px;"></i><span class="bottom-right-span">{{blog.stars}}</span>
+        <i nz-icon nzType="like-o" style="margin-right: 3px;"></i><span class="bottom-right-span">{{blog.goods}}</span>
+        <i nz-icon nzType="message" style="margin-right: 3px;"></i><span class="bottom-right-span">{{blog.comments}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="setpage">
+    <nz-pagination
+      [(nzPageIndex)]="pageInfo.pageNum"
+      [nzTotal]="pageInfo.total"
+      [nzSize]="'pageInfo.pageSize'"
+      nzShowSizeChanger
+      nzShowQuickJumper
+    ></nz-pagination>
+  </div>
+</div>

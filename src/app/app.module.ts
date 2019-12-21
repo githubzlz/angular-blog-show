@@ -7,10 +7,11 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzBadgeModule } from 'ng-zorro-antd/badge';
+import { NzBackTopModule } from 'ng-zorro-antd/back-top';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, 
   ],
   imports: [
     CoreModule,
@@ -18,7 +19,8 @@ import { NzBadgeModule } from 'ng-zorro-antd/badge';
     NzInputModule,
     NzIconModule,
     NzAvatarModule,
-    NzBadgeModule
+    NzBadgeModule,
+    NzBackTopModule
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,46 @@
+.aside-left {
+	float: left;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+[nz-menu] {
+	width: 100px;
+	border-radius: 5px;
+	background-color: rgba(223, 215, 215, 0.363);
+}
+[nz-menu-item] {
+	border-radius: 5px;
+}
+.body {
+	width: 100%;
+}
+.banner {
+	width: 73%;
+	height: 350px;
+	margin: 10px auto;
+	margin-right: 11%;
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	-ms-user-select: none; 
+	-khtml-user-select: none; 
+	user-select: none;
+}
+.artical {
+	margin: 10px auto;
+	margin-right: 11%;
+	width: 73%;
+}
+.main {
+	border-radius: 10px;
+	border: 1px solid white;
+	float: left;
+	margin-top: 5px;
+	width: 70%;
+}
+.side {
+	border-radius: 10px;
+	overflow: hidden;
+	float: right;
+	margin-top: 5px;
+	width: 29%;
+}

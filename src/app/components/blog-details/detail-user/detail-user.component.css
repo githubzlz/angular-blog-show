@@ -1,0 +1,13 @@
+.user-cart {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: hidden;
+}
+.user-article {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    overflow: hidden;
+}

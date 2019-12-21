@@ -1,2 +1,21 @@
-<p>index works!</p>
-<router-outlet></router-outlet>
+<nz-affix [nzOffsetTop]="50" class="aside-left">
+	<ul nz-menu nzMode="vertical" nzMatchRouter="true">
+		<li nz-menu-item nzSelected="true">所有分类</li>
+		<div *ngFor="let type of types">
+			<li nz-menu-item >{{type.name}}</li>
+		</div>
+	</ul>
+</nz-affix>
+<div class="body">
+	<div class="banner">
+		<app-banner></app-banner>
+	</div>
+	<div class="artical">
+		<div class="main">
+			<app-artical-main></app-artical-main>
+		</div>
+		<div class="side">
+			<app-artical-side></app-artical-side>
+		</div>
+	</div>
+</div>

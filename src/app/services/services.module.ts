@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { IndexService } from './index/index.service';
 
 
 
@@ -6,6 +7,6 @@ import { NgModule } from '@angular/core';
   declarations: [],
   imports: [
     
-  ]
+  ],
 })
 export class ServicesModule { }

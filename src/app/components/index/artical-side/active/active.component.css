@@ -1,0 +1,101 @@
+.active {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.active-top {
+    height: 40px;
+    width: 100px;
+    transition: 0.3s;
+    overflow: hidden;
+    transition: 1s width;
+}
+.active-top:hover {
+    width: 110%;
+}
+.active-top-title {
+    margin-left: 5px;
+    display: inline-block;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.active-top-title:hover {
+    transform: scale(1.1);
+}
+.active-top-line {
+    height: 4px;
+    background-color: #108ee9;
+    margin: 2px auto;
+    margin-left: 5px;
+    width: 80%;
+}
+.active-data[data-ratio="16:9"]{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px auto;
+    padding-top: calc(100% * 1 / 4);
+    position: relative;
+    overflow: hidden;
+}
+.active-data-left {
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    width: 25%;
+    height: 90%;
+    top: 5px;
+    left: 5px;
+}
+.active-data-right {
+    position: absolute;
+    overflow: hidden;
+    width: 70%;
+    height: 90%;
+    top: 3px;
+    right: 5px;
+}
+.time-day {
+    color: black;
+    font-size: 1.4vw;
+    font-weight: 900;
+    width: 90%;
+    height: 41%;
+    overflow: hidden;
+}
+.time-month {
+    margin-top: 3px;
+    font-size: 1.2vw;
+    width: 90%;
+    overflow: hidden;
+}
+.active-data-right-title {
+    height: 35%;
+    font-size: 1.0vw;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 550;
+    margin-top: 5%;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.active-data-right-note {
+    position: absolute;
+    font-size: 0.8vw;
+    height: 30%;
+    width: 80%;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+    word-break: break-all;
+    word-wrap: break-word;
+    bottom: 5px;
+    overflow: hidden;
+}

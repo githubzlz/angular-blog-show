@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as ScrollReveal from 'src/assets/js/scrollReveal.js';
 declare var ScrollReveal:any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,9 +10,9 @@ declare var ScrollReveal:any;
 
 export class AppComponent implements OnInit{
   public sr:ScrollReveal = new ScrollReveal({reset:true});
-  public in:any = { 
+  public maindata:any = { 
     delay: 0,
-    duration: 1200,
+    duration: 1000,
     mobile: false,
     easing: 'ease-in',
     distance: '30px',
@@ -21,23 +22,20 @@ export class AppComponent implements OnInit{
       y: 0,
       z: 0
     },
-  }
+  };
   ngOnInit(): void {
-    // this.sr.reveal('.header',this.in);
-    // this.sr.reveal('.body',this.in);
-    // this.sr.reveal('.footer',this.in);
+    
   }
 
   public tilteList:any = [
     {
       'title':'首页',
-      'url':"http://www.baidu.com",
       'children':[
         {
-          'title':'首页导航1',
-          'url':"http://www.baidu.com"
+          'title':'网站首页',
+          'url':"/index"
         },{
-          'title':'首页导航2',
+          'title':'网站地图',
           'url':"http://www.baidu.com"
         },{
           'title':'首页导航3',
@@ -46,11 +44,10 @@ export class AppComponent implements OnInit{
       ],
     },{
       'title':'详情页面',
-      'url':"http://www.baidu.com",
       'children':[
         {
-          'title':'详情1',
-          'url':"http://www.baidu.com"
+          'title':'博客详情',
+          'url':"/blogdetails"
         },{
           'title':'详情2',
           'url':"http://www.baidu.com"
@@ -107,8 +104,8 @@ export class AppComponent implements OnInit{
     },
   ];
   public login:any = {
-    'login': false,
-    'notlogin':true
+    'login': true,
+    'notlogin':false
   }
 
 }

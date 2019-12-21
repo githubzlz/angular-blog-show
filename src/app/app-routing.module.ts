@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { IndexComponent } from './components/index/index.component';
+import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 
 
 const routes: Routes = [
   {
-    path:'index',loadChildren:'src/app/components/index/index.module#IndexModule'
+    path:'index',component:IndexComponent
   },{
-    path:'**',loadChildren:'src/app/components/index/index.module#IndexModule'
-  }];
+    path:'blogdetails',component:BlogDetailsComponent
+  },{
+    path:'**',component:IndexComponent
+  }
+];
 
 @NgModule({
   declarations:[

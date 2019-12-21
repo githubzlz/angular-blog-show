@@ -1,0 +1,43 @@
+<div class="recommend">
+    <div class="top-recommend">
+        <div class="title-recommend">
+            今日推荐
+        </div>
+        <div class="line-recommend"></div>
+    </div>
+    <div class="data-side-large" data-ratio="16:9" *ngFor="let item of data1">
+        <div class="data-side-recommend-title">
+            这是主题title这是主题title这是主题title
+        </div>
+        <img class="data-side-recommend-img"  src="../../assets/images/2.jpg" alt="" style="object-fit: cover;">
+        <div class="data-side-recommend-back">
+            <div class="data-side-recommend-back-read" >阅读</div>
+        </div>
+    </div>
+    <div class="line-segmentation"></div>
+    <div class="addhover" *ngFor="let item of data2">
+        <div class="data-side-small" >
+            <a href="">
+                <div class="data-side-small-avator">
+                    <img src="../../assets/images/1.jpg" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                </div>
+            </a>
+            <a href="">
+                <div class="data-side-small-title">
+                    这是主题title这是主题title这是主题title
+                </div>
+            </a>
+            <div class="data-side-small-author">
+                <i nz-icon nzType="user" nzTheme="outline" style="margin-right: 5px;"></i>朱林忠
+                <div style="display: inline-block;">
+                    <i nz-icon nzType="clock-circle" nzTheme="outline" style="margin-right: 5px; margin-left: 5px;"></i>2019/12/18
+                </div>
+            </div>
+            <div class="data-side-small-content">&nbsp;&nbsp;&nbsp;&nbsp;
+                这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;
+                这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;
+                这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;这是内容,内容;
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,14 +1,12 @@
 <div class="header">
-  <div class="logo">
-    BOKE
+  <div class="logo" >
+      BOKE
   </div>
-  <ul nz-menu  nzMode="inline" nzOpen="false" nzMode="horizontal" class="header_title_ul">
-    <li nz-submenu  *ngFor="let item of tilteList,let id=index" [nzTitle]="item.title" nzMode="vertical" nzInlineCollapsed="true" [id]="'title'+id">
+  <ul nz-menu  nzMode="inline" nzOpen="false" nzMode="horizontal" class="header_title_ul" nzMatchRouter="true"  >
+    <li nz-submenu  *ngFor="let item of tilteList,let id=index" [nzTitle]="item.title" nzMode="vertical" nzInlineCollapsed="true" [id]="'title'+id" >
         <ul>
-          <li nz-menu-item *ngFor="let child of item.children">
-              <a [href]="child.href">
-                {{child.title}}
-              </a>
+          <li nz-menu-item *ngFor="let child of item.children" [routerLink]="[child.url]" routerLinkActive="router-link-active" >
+              {{child.title}}
           </li>
         </ul>
     </li>
@@ -17,6 +15,8 @@
         <li nz-menu-item>登录</li>
         <li nz-menu-item>注册</li>
       </ul>
+    </li>
+    <li nz-menu-item><i nz-icon nzType="edit" nzTheme="outline" style="margin-right:5px; "></i>写博客
     </li>
   </ul>
   <div class="header_right">
@@ -31,7 +31,7 @@
       </div>
       <div class="login" *ngIf="login.login">
         <nz-badge nzCount="99" style="margin-right: 24px;">
-          <nz-avatar nzIcon="user" nzShape="'square'" [nzSize]="37"></nz-avatar>
+          <nz-avatar nzIcon="user" nzShape="'square'" [nzSize]="33"></nz-avatar>
         </nz-badge>
       </div>
     </div>
@@ -40,6 +40,7 @@
 <div class="body">
   <router-outlet></router-outlet>
 </div>
+<nz-back-top></nz-back-top>
 <div class="footer">
     ©️2019 CSDN 皮肤主题: 创作都市 设计师: CSDN官方博客
 </div>

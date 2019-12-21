@@ -1,1 +1,5 @@
-<p>banner works!</p>
+<nz-carousel nzAutoPlay class="nz-banner" nzEnableSwipe="false">
+    <div nz-carousel-content *ngFor="let banner of banner" >
+        <img [src]="banner.url" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+    </div>
+</nz-carousel>
