@@ -16,7 +16,6 @@ registerLocaleData(zh);
   declarations: [],
   imports: [
     BrowserModule,
-    HttpClientModule,
     BrowserAnimationsModule,
     ServicesModule,
     ShareModule,

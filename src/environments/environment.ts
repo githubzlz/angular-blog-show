@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  SERVER_URL: ``,
+  BASE_DATA_SERVER_URL: `http://localhost:10800`,
+  MOCK_SERVER_URL: '',
+  // environmentType: EnvironmentEnumModel.DEVELOPMENT,
+  production: false,
+  useHash: true,
+  hmr: false,
 };
 
 /*

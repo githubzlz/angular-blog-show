@@ -1,5 +1,5 @@
 .active {
-    border: 1px solid white;
+    border: 3px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 5px;
     margin-top: 10px;
@@ -39,6 +39,7 @@
     padding-top: calc(100% * 1 / 4);
     position: relative;
     overflow: hidden;
+    border: 3px dashed rgba(245, 222, 179, 0.6);
 }
 .active-data-left {
     position: absolute;

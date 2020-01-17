@@ -11,7 +11,7 @@ import { NzBackTopModule } from 'ng-zorro-antd/back-top';
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
   ],
   imports: [
     CoreModule,

@@ -3,7 +3,7 @@
 }
 .data {
     background-color: rgb(255, 255, 255);
-    border: 2px outset white;
+    border: 3px dashed rgba(245, 222, 179, 0.6);
     padding: 5px;
     border-radius: 10px;
     width: 100%;
@@ -32,7 +32,7 @@
 }
 .img:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .right {
     display: inline-block;

@@ -1,5 +1,5 @@
 .recommend {
-    border: 1px solid white;
+    border: 3px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 100%;
     padding: 5px;
@@ -38,6 +38,7 @@
     padding-top: calc(100% * 9 / 16);
     position: relative;
     overflow: hidden;
+    border: 3px dashed rgba(245, 222, 179, 0.7);
 }
 .data-side-recommend-title {
     position: absolute;
@@ -111,6 +112,8 @@
 }
 .addhover {
     transition: 0.8s;
+    border: 3px dashed rgba(245, 222, 179, 0.7);
+    margin-top: 5px;
 }
 .addhover:hover {
     transform: scale(1.05);

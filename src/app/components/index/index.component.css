@@ -15,10 +15,10 @@
 	width: 100%;
 }
 .banner {
-	width: 73%;
-	height: 350px;
+	width: 70%;
+	height: 420px;
 	margin: 10px auto;
-	margin-right: 11%;
+	margin-right: 12%;
 	-moz-user-select: none; 
 	-webkit-user-select: none; 
 	-ms-user-select: none; 
@@ -26,19 +26,20 @@
 	user-select: none;
 }
 .artical {
-	margin: 10px auto;
-	margin-right: 11%;
-	width: 73%;
-}
-.main {
-	border-radius: 10px;
-	border: 1px solid white;
-	float: left;
-	margin-top: 5px;
+	background-color: black;
+	margin: 15px auto;
+	margin-right: 12%;
 	width: 70%;
 }
+.main {
+	border-radius: 5px;
+	border: 3px solid rgba(0, 0, 0, 0.1);
+	float: left;
+	margin-top: 5px;
+	width: 69%;
+}
 .side {
-	border-radius: 10px;
+	border-radius: 5px;
 	overflow: hidden;
 	float: right;
 	margin-top: 5px;

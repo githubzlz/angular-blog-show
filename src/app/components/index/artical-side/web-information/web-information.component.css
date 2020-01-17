@@ -1,5 +1,5 @@
 .information {
-    border: 1px solid white;
+    border: 3px solid rgba(0, 0, 0, 0.1);
     margin-top: 10px;
     border-radius: 10px;
     padding: 5px;
@@ -69,7 +69,7 @@
     z-index: 100;
     border: 5px solid wheat;
     right: 10%;
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 .info-body {
     position: relative;
